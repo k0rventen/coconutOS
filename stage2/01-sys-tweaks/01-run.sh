@@ -11,10 +11,13 @@ install -m 644 files/console-setup   	"${ROOTFS_DIR}/etc/default/"
 
 install -m 755 files/rc.local		"${ROOTFS_DIR}/etc/"
 
+install -m 644 files/10-console.conf    "${ROOTFS_DIR}/etc/sysctl.d/"
+
+install -m 644 files/regenerate_ssh_host_keys.service   "${ROOTFS_DIR}/lib/systemd/system/"
+
+
 on_chroot << EOF
 systemctl disable hwclock.sh
-systemctl disable nfs-common
-systemctl disable rpcbind
 if [ "${ENABLE_SSH}" == "1" ]; then
 	systemctl enable ssh
 else
@@ -54,3 +57,11 @@ usermod --pass='*' root
 EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
+
+echo "${TIMEZONE_DEFAULT}" > "${ROOTFS_DIR}/etc/timezone"
+rm "${ROOTFS_DIR}/etc/localtime"
+
+on_chroot << EOF
+dpkg-reconfigure -f noninteractive tzdata
+EOF
+
