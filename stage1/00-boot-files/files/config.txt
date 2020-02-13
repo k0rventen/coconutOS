@@ -2,6 +2,10 @@
 # http://rpf.io/configtxt
 # Some settings may impact device functionality. See link above for details
 
+# coconutOS
+disable_splash=1
+disable_overscan=1
+
 # uncomment if you get no picture on HDMI for a default "safe" mode
 #hdmi_safe=1
 
@@ -63,3 +67,4 @@ max_framebuffers=2
 
 [all]
 #dtoverlay=vc4-fkms-v3d
+
