@@ -9,5 +9,4 @@
 # In order to enable or disable this script just change the execution
 # bits.
 #
-echo "coconutOS 0.12 is up !"
 exit 0

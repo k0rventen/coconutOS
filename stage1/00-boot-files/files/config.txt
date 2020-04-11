@@ -2,9 +2,10 @@
 # http://rpf.io/configtxt
 # Some settings may impact device functionality. See link above for details
 
-# coconutOS
+# coconutOS tweaks
 disable_splash=1
 disable_overscan=1
+boot_delay=0
 
 # uncomment if you get no picture on HDMI for a default "safe" mode
 #hdmi_safe=1
