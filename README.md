@@ -2,17 +2,17 @@
 
 ![banner](banner.png)
 
-A minimal, server/docker oriented raspberry pi distribution, based off Raspian.
+A minimal, docker-server oriented raspberry pi distribution, based off Raspian.
 
 ## What's different ? 
 
-**tl;dr : boots is less than 6s. docker, python3 installed. ssh ready. ethernet only**
+**tl;dr : boots is less than 10s. docker pre-installed. ssh ready. ethernet only**
 
-It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages. 
+It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use mainly docker containers on it.**
 
 The default hostname will be `coconut`, with user `coco` and passwd `nut`. 
 
-If you want to build from it, but change some defaults like the username, hostname, just edit the `config` file, then run `time ./build.sh`.
+If you want to build from it, but change some defaults like the username, hostname, just edit the `config` file, then run `time ./build-docker.sh`.
 
 
 # Original pi-gen doc
