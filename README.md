@@ -9,6 +9,15 @@ A minimal, 64bit server oriented Raspberry Pi distribution, based off Raspberry 
 **tl;dr : 64-bit. boots in less than 10s. headless ready. kubernetes ready. ethernet only.**
 
 It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use containers (docker or kubernetes) on it.**
+=======
+A minimal, docker-server oriented raspberry pi distribution, based off Raspian.
+
+## What's different ? 
+
+**tl;dr : boots is less than 10s. docker pre-installed. ssh ready. ethernet only**
+
+It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use mainly docker containers on it.**
+
 
 The default hostname will be `coconut`, with user `coco` and passwd `nut`. 
 
