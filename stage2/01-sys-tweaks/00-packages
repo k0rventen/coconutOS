@@ -1,4 +1,4 @@
-ssh less fbset sudo psmisc ncdu
+ssh less fbset sudo psmisc
 console-setup keyboard-configuration debconf-utils parted unzip
 bash-completion pkg-config
 python3
@@ -15,3 +15,4 @@ ssh-import-id
 rng-tools
 ethtool
 vl805fw
+

@@ -2,6 +2,14 @@
 
 ![banner](banner.png)
 
+A minimal, 64bit server oriented Raspberry Pi distribution, based off Raspberry Pi OS.
+
+## What's different ? 
+
+**tl;dr : 64-bit. boots in less than 10s. headless ready. kubernetes ready. ethernet only.**
+
+It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use containers (docker or kubernetes) on it.**
+=======
 A minimal, docker-server oriented raspberry pi distribution, based off Raspian.
 
 ## What's different ? 
@@ -9,6 +17,7 @@ A minimal, docker-server oriented raspberry pi distribution, based off Raspian.
 **tl;dr : boots is less than 10s. docker pre-installed. ssh ready. ethernet only**
 
 It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use mainly docker containers on it.**
+
 
 The default hostname will be `coconut`, with user `coco` and passwd `nut`. 
 
@@ -52,6 +61,11 @@ The following environment variables are supported:
    `IMG_NAME=Raspbian` is logical for an unmodified RPi-Distro/pi-gen build,
    but you should use something else for a customized version.  Export files
    in stages may add suffixes to `IMG_NAME`.
+
+ * `RELEASE` (Default: buster)
+
+   The release version to build images against. Valid values are jessie, stretch
+   buster, bullseye, and testing.
 
  * `APT_PROXY` (Default: unset)
 
