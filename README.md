@@ -1,4 +1,21 @@
-# pi-gen
+# coconutOS
+
+![banner](banner.png)
+
+A minimal, 64bit server oriented Raspberry Pi distribution, based off Raspberry Pi OS.
+
+## What's different ? 
+
+**tl;dr : 64-bit. boots in less than 10s. headless ready. kubernetes ready. ethernet only.**
+
+It doesn't include the typical raspberrypi foundation packages, there's **no wireless connectivity (wifi nor bluetooth)**. It strips down a lot of non-critical packages like build-essential. **It's made to use containers (docker or kubernetes) on it.**
+
+The default hostname will be `coconut`, with user `coco` and passwd `nut`. 
+
+If you want to build from it, but change some defaults like the username, hostname, just edit the `config` file, then run `time ./build-docker.sh`.
+
+
+# Original pi-gen doc
 
 _Tool used to create the raspberrypi.org Raspbian images_
 

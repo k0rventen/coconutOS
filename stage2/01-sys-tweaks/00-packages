@@ -1,22 +1,12 @@
-ssh less fbset sudo psmisc strace ed ncdu crda
+ssh less fbset sudo psmisc
 console-setup keyboard-configuration debconf-utils parted unzip
-build-essential manpages-dev python bash-completion gdb pkg-config
-python-rpi.gpio v4l-utils
+bash-completion pkg-config
+python3
 avahi-daemon
-lua5.1
-luajit
 hardlink ca-certificates curl
-fake-hwclock nfs-common usbutils
-libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
-dosfstools
-dphys-swapfile
-raspberrypi-sys-mods
-pi-bluetooth
+fake-hwclock
 apt-listchanges
-usb-modeswitch
 libpam-chksshpwd
-rpi-update
-libmtp-runtime
 rsync
 htop
 man-db
@@ -25,7 +15,3 @@ ssh-import-id
 rng-tools
 ethtool
 vl805fw
-ntfs-3g
-pciutils
-rpi-eeprom
-raspinfo

@@ -2,6 +2,14 @@
 # http://rpf.io/configtxt
 # Some settings may impact device functionality. See link above for details
 
+# coconutOS tweaks
+disable_splash=1
+disable_overscan=1
+boot_delay=0
+arm_64bit=1
+dtoverlay=disable-wifi
+dtoverlay=disable-bt
+
 # uncomment if you get no picture on HDMI for a default "safe" mode
 #hdmi_safe=1
 
@@ -59,4 +67,3 @@ dtparam=audio=on
 # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d
 max_framebuffers=2
-arm_64bit=1
